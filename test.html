@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let str ="Madam madam madam";
+	let a= [...str];
+	let new_a =[];
+	for(let i= a.length-1; i >= 0; i--){
+		new_a.push(a[i]);
+	}
+	let reversed = new_a.join('');
+	if (reversed == str) {
+		console.log("palindrome");
+	}else{
+		console.log("no palindrome");
+	}
+	
+
+</script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 // 2. Split the new string into an array of characters.
 // 3. Filter for unique values into a new array.
 // 4. Sort the new array from a to z and join it together, removing the commas.
-document.write("KENNEDY");
 //return a new longuest unique string
+
 document.write("</br> ***************Output of the first exercise***************** </br>");
 function getNewProcessedStr(s1, s2) {
   let c = s1 + s2;
@@ -31,9 +31,9 @@ function search(array, key){
 	let low = 0;
 	let high = array.length-1;
 	let middle = 0;
-	//we must sirt the array first into incremental order
+	//we must sort the array first into incremental order
 	//befor we can use the binary search
-	let array_sorted = array.sort((a, b) => {return a-b;});
+	let array_sorted = array.sort((a, b) => a-b );
 	while(low <= high){
 		middle = Math.floor( (low+high)/2 );
 		if(key == array_sorted[middle]){
@@ -49,7 +49,7 @@ function search(array, key){
 }
 document.write("the list of numbers </br>");
 document.write("["+list+"] </br>");
-let searching = search(list, 1);
+let searching = search(list, 35);
 document.write(searching);
 
 
@@ -58,7 +58,7 @@ document.write(searching);
 document.write("</br></br>");
 document.write("</br> ***************Output of the second exercise***************** </br>");
 function palindrome(str){
-	let reg = /[\W]/g;
+	let reg = /[\W]/gi;
 	let valid_str = str.toLowerCase().replace(reg, "");
 
 	let reversed = valid_str.split("").reverse().join("");
