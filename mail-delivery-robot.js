@@ -109,9 +109,6 @@ VillageState.random = function(parcelCount = 5) {
 }
 
 
-
-
-
 var mailRoute = [
   "Alice's House", "Cabin", "Alice's House", "Bob's House",
   "Town Hall", "Daria's House", "Ernie's House",

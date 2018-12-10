@@ -1,4 +1,27 @@
 
+// 1. Combine strings s1 and s2.
+// 2. Split the new string into an array of characters.
+// 3. Filter for unique values into a new array.
+// 4. Sort the new array from a to z and join it together, removing the commas.
+document.write("KENNEDY");
+//return a new longuest unique string
+document.write("</br> ***************Output of the first exercise***************** </br>");
+function getNewProcessedStr(s1, s2) {
+  let c = s1 + s2;
+  let d = [...c]; //or d = c.split("");
+
+  let e = d.filter((v, i, self) => ( self.indexOf(v) === i ));
+  return e.sort().join('');
+
+  //return [...new Set(s1 + s2)].sort().join('');
+}
+
+let s1 = "xyaabbbccccdefww";
+let s2 = "xxxxyyyyabklmopq";
+document.write(getNewProcessedStr(s1, s2));
+document.write("</br></br>");
+
+
 let list = [54,2,87, 3,65, 58, 785, 21, 35, 33, 545, 369, 458, 3582, -15, -7855, 325, 1];
 
 /**********exo 01**********************/
