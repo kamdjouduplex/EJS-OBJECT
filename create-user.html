@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn JS with new Syntax</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<style type="text/css">
+		.c-bg{
+			background-color: rgba(255,255,50,.9);
+		}
+		
+		.back-btn{
+			width: 50px; 
+			height: 50px;
+			border-radius: 50%;
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+			z-index: 1000;
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid c-bg">
+	  <div class="container">
+	    <h1 class="display-4">Learn JavaSript with <strong>Tonypro</strong></h1>
+	    <p class="lead">We will start by an introduction to standard Javascript then move to EcmaScript 6 syntax to see how we can reduce our code length and improve its readability.</p>
+	  </div>
+	</div>
+	<div class="container my-5" >
+		<h2>Create a new user</h2>
+		<form >
+			<div class="form-row">
+			  <div class="form-group col-md-6">
+			    <label for="name">name</label>
+			    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+			  </div>
+			  <div class="form-group col-md-6">
+			    <label for="username">username</label>
+			    <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+			  </div>
+			</div>
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="inputEmail4">Email</label>
+		      <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="phone">Phone</label>
+		      <input type="tel" class="form-control" name="phone" id="phone" placeholder="6 xxxxxxxx">
+		    </div>
+		  </div>
+		  
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="inputCity">City</label>
+		      <input type="text" class="form-control" name="city" id="inputCity">
+		    </div>
+		    <div class="form-group col-md-4">
+		      <label for="inputState">State</label>
+		      <select id="inputState" class="form-control" name="state">
+		        <option selected>Choose...</option>
+		        <option value="littoral">Littoral</option>
+		        <option value="centre">Centre</option>
+		        <option value="nord">Nord</option>
+		        <option value="west">West</option>
+		        <option value="est">Est</option>
+		        <option value="nord-west">Nord West</option>
+		      </select>
+		    </div>
+		    <div class="form-group col-md-2">
+		      <label for="inputZip">Zip</label>
+		      <input type="number" class="form-control" name="zip" id="inputZip">
+		    </div>
+		  </div>
+
+		  <div class="form-row">
+		  	<div class="form-group col-md-6">
+		  	  <label for="website">website</label>
+		  	  <input type="text" class="form-control" name="website" id="website" placeholder="example.com">
+		  	</div>
+		  	<div class="form-group col-md-6">
+		  	  <label for="suite">Suite</label>
+		  	  <input type="text" class="form-control" name="suite" id="suite" placeholder="Apartment, studio, or floor">
+		  	</div>
+		  </div>
+		  
+		  <button type="button" class="btn btn-primary" onclick="getFormData()">Create</button>
+		</form>
+	</div>
+	<div class="back-btn">
+		<a href="./js_demo.html"><img class="img-fluid" src="img/back.png"></a>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="create-user.js"></script>
+</body>
+</html>
+

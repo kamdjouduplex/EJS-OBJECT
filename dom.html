@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+</head>
+<body>
+	<p style="border: 3px solid red;">I am a box</p>
+	<p>One</p>
+	<p>Two</p>
+	<p>Three</p>
+
+	<p>
+		<img src="img/robot_idle.png" alt="Cat"> In the 
+		<img src="img/robot_idle2x.png" alt="Hat">.
+	</p>
+	<p><button onclick="replaceImage()">replace</button></p>
+	<script type="text/javascript">
+		let para = document.body.getElementsByTagName('p')[0];
+
+		console.log("client Hight", para.clientHeight);
+		console.log("offset Hight", 
+			para.offsetHeight);
+
+		function replaceImage(){
+			let images = document.body.getElementsByTagName('img');
+			for(let i =images.length-1; i>=0; i--)
+			{
+				let image= images[i];
+				if(image.alt)
+				{
+					let text= document.createTextNode(image.alt);
+					image.parentNode.replaceChild(text, image);
+				}
+			}
+		}
+	</script>
+</body>
+</html>

@@ -35,7 +35,7 @@ document.write(searching);
 document.write("</br></br>");
 document.write("</br> ***************Output of the second exercise***************** </br>");
 function palindrome(str){
-	let reg = /[\W]/g;
+	let reg = /[\W_]/g;
 	let valid_str = str.toLowerCase().replace(reg, "");
 
 	let reversed = valid_str.split("").reverse().join("");
