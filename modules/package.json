@@ -1,0 +1,14 @@
+{
+  "name": "test_modules",
+  "version": "1.0.0",
+  "description": "just testing the modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tonypro",
+  "license": "MIT",
+  "dependencies": {
+    "binary-search": "^1.3.4"
+  }
+}

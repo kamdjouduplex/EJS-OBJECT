@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	const MOUNTAINS = [
+	{name: "kilimanjaro", height: 5895, place: "Tanzania"},
+	{name: "Everest", height: 8848, place: "Nepal"},
+	{name: "Vaalserberg", height: 323, place: "United State"},
+	{name: "Popocatepetl", height: 5465, place: "Mexico"},
+	{name: "Mont Blanc", height: 4808, place: "Italy/France"}
+	];
+
+	let table = document.createElement('table');
+	let row = document.createElement('tr');
+
+	let th1 = document.createElement('🎈');
+	let th2 = document.createElement('th');
+	let th3 = document.createElement('th');
+
+		th1.appendChild(document.createTextNode('name'));
+		th2.appendChild(document.createTextNode('height'));
+		th3.appendChild(document.createTextNode('place'));
+		row.appendChild(th1);
+		row.appendChild(th2);
+		row.appendChild(th3);
+
+		table.appendChild(row);
+
+	for(let el of MOUNTAINS){
+		let r = document.createElement('tr');
+		let td1 = document.createElement('td');
+		let td2 = document.createElement('td');
+		let td3 = document.createElement('td');
+
+		td1.appendChild(document.createTextNode(el.name));
+		td2.appendChild(document.createTextNode(el.height));
+		td3.appendChild(document.createTextNode(el.place));
+
+		r.appendChild(td1);
+		r.appendChild(td2);
+		r.appendChild(td3);
+
+		table.appendChild(r);
+	}
+	document.body.appendChild(table);
+
+	table.style.borderCollapse = "collapse";
+
+	let th = document.getElementsByTagName('th');
+	let td = document.getElementsByTagName('td');
+
+	for (let i = 0; i< th.length; i++) {
+		th[i].style.border = "1px solid black";
+		th[i].style.textAlign = "right";
+	}
+	for (let i = 0; i< td.length; i++) {
+		td[i].style.border = "1px solid black";
+		td[i].style.textAlign = "right";
+	}
+</script>
+</body>
+</html>
